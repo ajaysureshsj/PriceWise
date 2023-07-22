@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <title>PriceWise - Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        <div class="col-md-3 mb-2 mb-md-0 logo-and-name">
+          <a
+            href="/"
+            class="d-inline-flex link-body-emphasis text-decoration-none"
+          >
+            <img
+              src="/images/logo.png"
+              alt="Price Wise Logo"
+              class="header-logo"
+            />
+          </a>
+          <a href="/" class="price-wise-a"
+            ><h3 id="navbar-brand-name">PriceWise.</h3></a
+          >
+        </div>
+      </header>
+    </div>
+    <div class="container d-flex justify-content-between">
+      <img src="/images/sign-up.webp" alt="" draggable="false" />
+      <form action="/signup" method="post" class="w-100 p-4">
+        <h1 class="font-weight-bold">Sign Up</h1>
+        <div class="form-floating mt-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="First Name"
+            name="fName"
+            required
+            autofocus
+          />
+          <label for="floatingPassword">First Name</label>
+        </div>
+        <div class="form-floating mt-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Last Name"
+            name="lName"
+            required
+          />
+          <label for="floatingPassword">Last Name</label>
+        </div>
+        <div class="form-floating mt-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+            name="email"
+            required
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mt-3">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Enter your password"
+            name="password"
+            required
+          />
+          <label for="floatingInput">Password</label>
+        </div>
+        <button class="btn btn-dark w-100 mt-3 cta-btn-hero" type="submit">
+          Sign Up
+        </button>
+        <div class="card-footer text-left">
+          <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+      </form>
+    </div>
+    <%- include('partials/footer.ejs') %>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
