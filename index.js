@@ -461,7 +461,7 @@ function checkPriceDrops() {
 }
 
 // Schedule price drop check to run every 24 hours (at midnight)
-cron.schedule("*0 0 * * *", checkPriceDrops);
+cron.schedule("0 0 * * *", checkPriceDrops);
 
 // Listener
 app.listen("3004", function () {
